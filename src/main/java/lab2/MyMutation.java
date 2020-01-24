@@ -20,11 +20,6 @@ public class MyMutation implements EvolutionaryOperator<double[]> {
                 for(int i = 0; i < solution.length; i++){
                     double sigma = random.nextDouble();
                     if(sigma < 1./solution.length){
-//                        solution[i] = solution[i] + random.nextGaussian() *
-//                                ((1.0 - iter_count/max_iter));
-
-//                        solution[i] = solution[i] + random.nextGaussian() *
-//                                (2 * Math.pow((1.0 - iter_count/max_iter), 0.5) + 0.1);
 
                         solution[i] = solution[i] + random.nextGaussian() * (1.0 - iter_count/max_iter);
 
